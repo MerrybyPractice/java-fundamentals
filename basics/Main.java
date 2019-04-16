@@ -3,6 +3,7 @@ public class Main{
     int catCount = 2; 
     System.out.println("I own" + " " + catCount + " " + pluralize("cat", catCount)+".");
 
+    System.out.println(flipNHeads(4));
   }
     
     public static String pluralize(String animal, int quantAnimal){ 
@@ -18,12 +19,25 @@ public class Main{
       
       return plural;
     }
+    public static String flipNHeads(int n){
+      int i = 0;
+      String side;
+      int flips = 0;
+      while (i < n){
+        if(Math.random() >= 0.5){
+          side = "Heads";
+          i ++;
+          flips ++;
+        }else{
+          i = 0;
+          side = "Tails";
+        }
+        System.out.println(side);
+      }
+      return ("It took " + flips + " flips to flip " + n + " heads in a row.");
+    }
 }
-  
-//Pluralize -- needs to return a string
-  //needs to accpect a word and a number
-  //return a string with the word pluralized (ie, an s added on to the end) if hte number is 0 or greater than one
-  //if number is one, do not add an s
+
 //flipping coins -- returns nothing to main, prints as goes
   //takes in integer n, flips until n heads are flipped in a row 
   //random number between o and 1
