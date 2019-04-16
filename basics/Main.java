@@ -1,18 +1,19 @@
 public class Main{
   public static void main(String[] args){
     int catCount = 2; 
-    System.out.println("I own" + catCount + " " + pluralize("cat", catCount)+".");
+    System.out.println("I own" + " " + catCount + " " + pluralize("cat", catCount)+".");
 
   }
     
-    public static String pluralize(String plural, int quantAnimal){ 
+    public static String pluralize(String animal, int quantAnimal){ 
       char s; 
       s = 's'; 
+      String plural;
       
-      if(quantAnimal == 0 || quantAnumal > 1 ){
-        plural = String+s;
+      if(quantAnimal == 0 || quantAnimal > 1 ){
+        plural = animal+s;
       }else{
-        plural = String; 
+        plural = animal; 
       }
       
       return plural;
