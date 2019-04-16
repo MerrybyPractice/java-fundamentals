@@ -47,8 +47,10 @@ public class Main{
     
     int pastSecond = 0; 
     
-    while(true){
+    int counter = 0;
 
+    while(true){
+      counter ++; 
       LocalDateTime now = LocalDateTime.now();
       int hour = now.getHour();
       int minute = now.getMinute();
@@ -56,9 +58,17 @@ public class Main{
       
       
       String currentTime = hour+":"+minute+":"+second;
+
+      int kzh = 1000; 
+      int total = kzh * counter; 
+      
+
+
       if (now.getSecond() != pastSecond){
-        System.out.println(currentTime);
+        System.out.println(currentTime + " " + (total/1000)+" kzh");
         pastSecond = now.getSecond();
+        counter = 0; 
+        total = 0; 
       }
     }
   
