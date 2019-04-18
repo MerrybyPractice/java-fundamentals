@@ -21,6 +21,32 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/test/java/basiclibrary/LibraryTest.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="304">
+                    <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -31,23 +57,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/basiclibrary/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="149" column="31" selection-start-line="149" selection-start-column="31" selection-end-line="149" selection-end-column="31" />
+            <state relative-caret-position="225">
+              <caret line="208" column="31" lean-forward="true" selection-start-line="208" selection-start-column="31" selection-end-line="208" selection-end-column="31" />
               <folding>
                 <element signature="e#0#5051#0" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="e#1956#1957#0" expanded="true" />
                 <element signature="e#1983#1984#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/basiclibrary/LibraryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -60,8 +77,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/basiclibrary/LibraryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/basiclibrary/Library.java" />
+        <option value="$PROJECT_DIR$/src/test/java/basiclibrary/LibraryTest.java" />
       </list>
     </option>
   </component>
@@ -91,9 +108,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="561" />
+    <option name="y" value="23" />
+    <option name="width" value="879" />
+    <option name="height" value="829" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -182,7 +201,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testAnalyzingWeatherData">
+  <component name="RunManager" selected="Application.Library">
     <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="basiclibrary.Library" />
       <module name="basiclibrary.main" />
@@ -214,8 +233,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LibraryTest.testAnalyzingWeatherData" />
         <item itemvalue="Application.Library" />
+        <item itemvalue="JUnit.LibraryTest.testAnalyzingWeatherData" />
       </list>
     </recent_temporary>
   </component>
@@ -236,9 +255,12 @@
     <history-entry file="LibraryTest_testAnalyzingWeatherData - 2019.04.18 at 10h 08m 36s.xml">
       <configuration name="LibraryTest.testAnalyzingWeatherData" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LibraryTest_testAnalyzingWeatherData - 2019.04.18 at 10h 49m 20s.xml">
+      <configuration name="LibraryTest.testAnalyzingWeatherData" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="561" y="23" width="879" height="829" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -247,16 +269,16 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49938348" visible="true" weight="0.24351585" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49938348" visible="true" weight="0.045949213" />
       <window_info id="Structure" order="1" sideWeight="0.50061655" side_tool="true" weight="0.24351585" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" weight="0.3292232" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50060457" side_tool="true" weight="0.32729805" />
       <window_info anchor="bottom" id="Build" weight="0.3286908" />
-      <window_info anchor="bottom" id="Messages" weight="0.32799014" />
+      <window_info anchor="bottom" id="Messages" weight="0.32729805" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28976572" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993954" visible="true" weight="0.32729805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39950678" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -273,22 +295,25 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/basiclibrary/LibraryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/basiclibrary/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="149" column="31" selection-start-line="149" selection-start-column="31" selection-end-line="149" selection-end-column="31" />
+        <state relative-caret-position="225">
+          <caret line="208" column="31" lean-forward="true" selection-start-line="208" selection-start-column="31" selection-end-line="208" selection-end-column="31" />
           <folding>
             <element signature="e#0#5051#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#1956#1957#0" expanded="true" />
             <element signature="e#1983#1984#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/basiclibrary/LibraryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

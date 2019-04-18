@@ -6,6 +6,9 @@ package basiclibrary;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class LibraryTest {
@@ -30,4 +33,31 @@ public class LibraryTest {
 
     private void assertEquals(String[] strings) {
     }
+
+    @Test
+    public void testTally() {
+        List<String> votes = new ArrayList<>();
+        votes.add("One");
+        votes.add("Two");
+        votes.add("Fourteen");
+        votes.add("Three");
+        votes.add("Seven");
+        votes.add("Six");
+        votes.add("Seven");
+        votes.add("Forty-five");
+        votes.add("eight");
+        votes.add("Nineteen");
+
+        String results = Library.tally(votes);
+
+        Assert.assertEquals("seven", true, results);
+
+        assertTrue(1 == results.length());
+
+        //assertFalse(results = String.valueOf(7));
+
+
+    }
+
+
 }

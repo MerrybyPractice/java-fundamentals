@@ -11,43 +11,55 @@ import java.util.*;
 public class Library {
     public static void main(String[] args) {
 
-//        //test lines for roll
-//        //odd number
-//        System.out.println(Arrays.toString(roll(7)));
-//        //even number
-//        System.out.println(Arrays.toString(roll(14)));
-//        //zero
-//        System.out.println(Arrays.toString(roll(0)));
-//
-//        //test lines for containsDuplicates
-//
-//        //should return true
-//        int[] dupNextToEachOther = new int[]{1, 2, 5, 6, 6, 8};
-//        System.out.println(containsDuplicates(dupNextToEachOther));
-//
-//
-//        //should return true
-//        int[] dupFarApart = new int[]{9, 3, 6, 2, 4, 5, 3, 1,};
-//        System.out.println(containsDuplicates(dupFarApart));
-//
-//        //should return false
-//        int[] noDup = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
-//        System.out.println(containsDuplicates(noDup));
-//
-//        //test lines for calculatingAverages
-//        int[] allOneNumber = new int[]{1, 1, 1, 1};
-//        System.out.println(calculatingAverages(allOneNumber));
-//
-//        int[] manyNumbers = new int[]{7, 8, 3, 5, 2, 4, 7, 5, 2, 4, 6, 8, 6, 2, 3};
-//        System.out.println(calculatingAverages(manyNumbers));
-//
-////        int[] empty = new int[]{};
-////        System.out.println(calculatingAverages(empty));
-//
-//        int[] oneNumber = new int[]{4};
-//        System.out.println(calculatingAverages(oneNumber));
+        //test lines for roll
+        //odd number
+        System.out.println(Arrays.toString(roll(7)));
+        //even number
+        System.out.println(Arrays.toString(roll(14)));
+        //zero
+        System.out.println(Arrays.toString(roll(0)));
+
+        //test lines for containsDuplicates
+
+        //should return true
+        int[] dupNextToEachOther = new int[]{1, 2, 5, 6, 6, 8};
+        System.out.println(containsDuplicates(dupNextToEachOther));
 
 
+        //should return true
+        int[] dupFarApart = new int[]{9, 3, 6, 2, 4, 5, 3, 1,};
+        System.out.println(containsDuplicates(dupFarApart));
+
+        //should return false
+        int[] noDup = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
+        System.out.println(containsDuplicates(noDup));
+
+        //test lines for calculatingAverages
+        int[] allOneNumber = new int[]{1, 1, 1, 1};
+        System.out.println(calculatingAverages(allOneNumber));
+
+        int[] manyNumbers = new int[]{7, 8, 3, 5, 2, 4, 7, 5, 2, 4, 6, 8, 6, 2, 3};
+        System.out.println(calculatingAverages(manyNumbers));
+
+//        int[] empty = new int[]{};
+//        System.out.println(calculatingAverages(empty));
+
+        int[] oneNumber = new int[]{4};
+        System.out.println(calculatingAverages(oneNumber));
+
+        List<String> votes = new ArrayList<>();
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Shrub");
+        votes.add("Hedge");
+        votes.add("Shrub");
+        votes.add("Bush");
+        votes.add("Hedge");
+        votes.add("Bush");
+
+        String winner = tally(votes);
+        System.out.println(winner + " received the most votes!");
     }
 
     public boolean someLibraryMethod() {
@@ -147,7 +159,55 @@ public class Library {
         return returnValue;
     }
 
-    public static String tally()
+    public static String tally(List<String> votes) {
+
+        Object[] votesArray = votes.toArray();
+
+//        System.out.println(Arrays.toString(votesArray));
+
+        String[] stringyVotesArray = new String[votesArray.length];
+
+        for (int j = 0; j < votesArray.length; j++) {
+            stringyVotesArray[j] = (String) votesArray[j];
+        }
+
+        Arrays.sort(stringyVotesArray);
+        //sort so each unique type of string is next to each other
+
+        Integer numVotes = 0;
+
+        Pair<String, Integer> winner = null;
+
+        int currentCandidate = 0;
+        int previousCandidate = 0;
+
+        for (int i = 0; i < stringyVotesArray.length; i++) {
+
+            numVotes++;
+
+            if ((i != votesArray.length - 1) && !(votesArray[i].equals(votesArray[i + 1]))) {
+
+                currentCandidate++;
+
+                if (currentCandidate > previousCandidate) {
+                    winner = new Pair<>(stringyVotesArray[i], numVotes);
+                    previousCandidate = currentCandidate;
+                    currentCandidate = 0;
+                } else {
+
+                    previousCandidate = currentCandidate;
+
+                    currentCandidate = 0;
+                }
+
+                numVotes = 0;
+
+            }
+
+        }
+
+        return winner.getKey();
+    }
 }
 
 
