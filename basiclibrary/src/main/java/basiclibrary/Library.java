@@ -3,48 +3,51 @@
  */
 package basiclibrary;
 
-import java.util.Arrays;
+import javafx.util.Pair;
 
-import static java.util.Arrays.copyOf;
+import java.util.*;
+
 
 public class Library {
     public static void main(String[] args) {
 
-        //test lines for roll
-        //odd number
-        System.out.println(Arrays.toString(roll(7)));
-        //even number
-        System.out.println(Arrays.toString(roll(14)));
-        //zero
-        System.out.println(Arrays.toString(roll(0)));
+//        //test lines for roll
+//        //odd number
+//        System.out.println(Arrays.toString(roll(7)));
+//        //even number
+//        System.out.println(Arrays.toString(roll(14)));
+//        //zero
+//        System.out.println(Arrays.toString(roll(0)));
+//
+//        //test lines for containsDuplicates
+//
+//        //should return true
+//        int[] dupNextToEachOther = new int[]{1, 2, 5, 6, 6, 8};
+//        System.out.println(containsDuplicates(dupNextToEachOther));
+//
+//
+//        //should return true
+//        int[] dupFarApart = new int[]{9, 3, 6, 2, 4, 5, 3, 1,};
+//        System.out.println(containsDuplicates(dupFarApart));
+//
+//        //should return false
+//        int[] noDup = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
+//        System.out.println(containsDuplicates(noDup));
+//
+//        //test lines for calculatingAverages
+//        int[] allOneNumber = new int[]{1, 1, 1, 1};
+//        System.out.println(calculatingAverages(allOneNumber));
+//
+//        int[] manyNumbers = new int[]{7, 8, 3, 5, 2, 4, 7, 5, 2, 4, 6, 8, 6, 2, 3};
+//        System.out.println(calculatingAverages(manyNumbers));
+//
+////        int[] empty = new int[]{};
+////        System.out.println(calculatingAverages(empty));
+//
+//        int[] oneNumber = new int[]{4};
+//        System.out.println(calculatingAverages(oneNumber));
 
-        //test lines for containsDuplicates
 
-        //should return true
-        int[] dupNextToEachOther = new int[]{1, 2, 5, 6, 6, 8};
-        System.out.println(containsDuplicates(dupNextToEachOther));
-
-
-        //should return true
-        int[] dupFarApart = new int[]{9, 3, 6, 2, 4, 5, 3, 1,};
-        System.out.println(containsDuplicates(dupFarApart));
-
-        //should return false
-        int[] noDup = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
-        System.out.println(containsDuplicates(noDup));
-
-        //test lines for calculatingAverages
-        int[] allOneNumber = new int[]{1, 1, 1, 1};
-        System.out.println(calculatingAverages(allOneNumber));
-
-        int[] manyNumbers = new int[]{7, 8, 3, 5, 2, 4, 7, 5, 2, 4, 6, 8, 6, 2, 3};
-        System.out.println(calculatingAverages(manyNumbers));
-
-//        int[] empty = new int[]{};
-//        System.out.println(calculatingAverages(empty));
-
-        int[] oneNumber = new int[]{4};
-        System.out.println(calculatingAverages(oneNumber));
     }
 
     public boolean someLibraryMethod() {
@@ -93,6 +96,58 @@ public class Library {
         return n / inputArray.length;
     }
 
+    public static String analyzingWeatherData(int[][] weeklyMonthTemperatures) {
+        HashSet<Integer> uniqueWeather = new HashSet<>();
+        for (int i = 0; i < weeklyMonthTemperatures.length; i++) {
+            for (int j = 0; j < weeklyMonthTemperatures.length; j++)
+                uniqueWeather.add(weeklyMonthTemperatures[i][j]);
+        }
+        //broke out min max function as it was multi-use and made analyzingWeatherData unwieldy
+        Pair<Integer, Integer> minMax = (returnMinMaxDouble(weeklyMonthTemperatures));
+
+        //I know min will always be the key in the pair and max will always be the value in the pair because of the order returnMinMaxDouble returns the pair in.
+        int min = minMax.getKey();
+        System.out.println("Low:" + min);
+
+        //max will always be the value in the pair due to the order of returnMinMaxDouble as well(for clarity)
+        int max = minMax.getValue();
+        System.out.println("High:" + max);
+
+        for (int k = min; k < max; k += 1) {
+
+            if (!(uniqueWeather.contains(k))) {
+                System.out.println("Never saw temperature:" + k);
+            }
+
+        }
+
+        return "Low: " + min + " High: " + max;
+    }
+
+    public static Pair<Integer, Integer> returnMinMaxDouble(int[][] iterableArray) {
+
+        Integer[] singleDimensionalArray = new Integer[(iterableArray.length) * (iterableArray[0].length)];
+
+        int i = 0;
+
+        for (int j = 0; j < iterableArray.length; j++) {
+            for (int l = 0; l < iterableArray[j].length; l++) {
+                singleDimensionalArray[i] = iterableArray[j][l];
+                i++;
+            }
+        }
+
+        Arrays.sort(singleDimensionalArray);
+
+        int min = singleDimensionalArray[0];
+        int max = singleDimensionalArray[singleDimensionalArray.length - 1];
+
+        Pair<Integer, Integer> returnValue = new Pair<>(min, max);
+
+        return returnValue;
+    }
+
+    public static String tally()
 }
 
 
