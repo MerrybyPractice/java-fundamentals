@@ -1,5 +1,6 @@
 package inheritance;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Restaurant {
@@ -8,6 +9,8 @@ public class Restaurant {
     public String name;
     public int stars;
     public int price;
+    public ArrayList<Object> reviews = new ArrayList<>();
+
 
     /**
      * the .toString method adds *'s and $'s to an array list for each iteration through a for loop, counting up to
@@ -30,6 +33,22 @@ public class Restaurant {
         return stringyRestaurantInfo;
     }
 
-    //methods: toString
+    public void addReview(String body, String author, int stars) {
+        Review review = new Review();
+        review.body = body;
+        review.author = author;
+        review.stars = stars;
+        review.restaurant = this;
+
+        int existingStars = this.stars;
+
+        this.stars = existingStars / stars;
+
+        reviews.add(review);
+    }
+
+    public ArrayList viewReviews() {
+        return reviews;
+    }
 
 }

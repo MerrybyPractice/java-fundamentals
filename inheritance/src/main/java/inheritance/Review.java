@@ -7,7 +7,7 @@ public class Review {
     public String body;
     public String author;
     public int stars;
-
+    public Restaurant restaurant;
 
     /**
      * the .toString method adds *'s to an array list for each iteration through a for loop, counting up to
@@ -20,7 +20,7 @@ public class Review {
             stringyStars.add("*");
         }
 
-        String stringyReviewInfo = body + " " + author + " " + stringyStars;
+        String stringyReviewInfo = restaurant.name + " " + body + " " + author + " " + stringyStars;
         return stringyReviewInfo;
     }
 }

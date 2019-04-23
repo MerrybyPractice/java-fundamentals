@@ -5,6 +5,8 @@ package inheritance;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.*;
 
 public class LibraryTest {
@@ -39,5 +41,16 @@ public class LibraryTest {
         // the int of stars. Given that knowledge, this how we would expect it to print the test review.
         assertEquals("testing name of author [*, *, *, *]", test.toString());
     }
-}
 
+    @Test
+    public void testAddReview() {
+        Restaurant test = new Restaurant();
+        test.name = "test";
+        test.addReview("Info on the Restaurant", "A Name", 3);
+
+        ArrayList<String> expected = new ArrayList<>();
+        expected.add("test Info on the Restaurant A Name [*, *, *]");
+        assertEquals(expected.toString(), test.reviews.toString());
+    }
+
+}
