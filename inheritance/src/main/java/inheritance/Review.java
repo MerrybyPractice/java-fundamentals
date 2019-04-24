@@ -7,7 +7,7 @@ public class Review {
     public String body;
     public String author;
     public double stars;
-    public String business;
+    public String busines;
     public String movieSaw;
 
     public Review reviewConstructor(String body, String author, double stars) {
