@@ -36,13 +36,15 @@ public class Shop implements Business {
 
     }
 
-    @Override
+
     public void addReview(String body, String author, double stars) {
         Review reviewTitle = new Review().reviewConstructor(body, author, stars);
+        this.reviews.add(reviewTitle);
 
         double existingStars = this.stars;
 
         this.stars = ((existingStars / stars) * 100);
+
     }
 
     @Override

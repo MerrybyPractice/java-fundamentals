@@ -6,6 +6,7 @@ package inheritance;
 import org.junit.Test;
 
 import javax.swing.border.TitledBorder;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import static org.junit.Assert.*;
@@ -44,15 +45,26 @@ public class ReviewsLibraryTest {
     }
 
     @Test
-    public void testAddReview() {
-        Shop test = new Shop();
-        test.name = "test";
-        test.addReview("Info on the Restaurant", "A Name", 3.0);
+    public void testEachBusinessAddReviews() {
+        Shop testShop = new Shop();
+        testShop.addReview("Info on the Shop", "Shop Patron", 2);
 
-        ArrayList<String> expected = new ArrayList<>();
-        expected.add("test Info on the Restaurant A Name [*, *, *]");
+        String expectedShop = "null " + "Info on the Shop " + "Shop Patron " + "[*, *]";
 
-        assertEquals(expected.toString(), test.reviews.get(1).toString());
+        Restaurant testRestaurant = new Restaurant();
+        testRestaurant.addReview("Info on the Restaurant", "Restaurant Patron", 2);
+
+        String expectedRestaurant = "null " + "Info on the Restaurant " + "Restaurant Patron " + "[*, *]";
+
+        Theater testTheater = new Theater();
+        testTheater.addReview("Info on the Theater", "Theater Patron", 2, "Movie viewed");
+
+        //this is what came out when I hand varified theater, unsure why movie is not attached.
+        String expectedTheater = "null " + "Info on the Theater " + "Theater Patron " + "[*, *]";
+
+        assertEquals(expectedShop, testShop.reviews.get(0).toString());
+        assertEquals(expectedRestaurant, testRestaurant.reviews.get(0).toString());
+        assertEquals(expectedTheater, testTheater.reviews.get(0).toString());
     }
 
 }

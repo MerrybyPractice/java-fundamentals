@@ -12,8 +12,6 @@ public interface Business {
 
     String toString();
 
-    void addReview(String body, String author, double stars);
-
     ArrayList viewReviews();
 
 }

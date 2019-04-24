@@ -20,16 +20,14 @@ public class Theater implements Business {
     }
 
 
-    @Override
-
-    public void addReview(String body, String author, double stars) {
-        Review reviewTitle = new Review().reviewConstructor(body, author, stars);
+    public void addReview(String body, String author, double stars, String movie) {
+        Review reviewTitle = new Review().reviewConstructor(body, author, stars, movie);
+        this.reviews.add(reviewTitle);
 
         double existingStars = this.stars;
 
         this.stars = ((existingStars / stars) * 100);
 
-        reviews.add(reviewTitle);
 
     }
 

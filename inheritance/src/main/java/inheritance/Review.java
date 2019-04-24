@@ -8,12 +8,25 @@ public class Review {
     public String author;
     public double stars;
     public String business;
+    public String movieSaw;
 
     public Review reviewConstructor(String body, String author, double stars) {
         this.body = body;
         this.author = author;
         this.stars = stars;
-        this.business = Business.name;
+
+        return this;
+    }
+
+    /**
+     * theater review constructor is just an overloaded constructor that adds movie saw as a input field
+     * and as a field in the review itself
+     */
+    public Review reviewConstructor(String body, String author, double stars, String movie) {
+        this.body = body;
+        this.author = author;
+        this.stars = stars;
+        this.movieSaw = movie;
 
         return this;
     }
