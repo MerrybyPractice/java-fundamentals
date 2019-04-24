@@ -5,47 +5,50 @@ package basiclibrary;
 
 import javafx.util.Pair;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
 
 
 public class Library {
     public static void main(String[] args) {
 
-        //test lines for roll
-        //odd number
-        System.out.println(Arrays.toString(roll(7)));
-        //even number
-        System.out.println(Arrays.toString(roll(14)));
-        //zero
-        System.out.println(Arrays.toString(roll(0)));
-
-        //test lines for containsDuplicates
-
-        //should return true
-        int[] dupNextToEachOther = new int[]{1, 2, 5, 6, 6, 8};
-        System.out.println(containsDuplicates(dupNextToEachOther));
-
-
-        //should return true
-        int[] dupFarApart = new int[]{9, 3, 6, 2, 4, 5, 3, 1,};
-        System.out.println(containsDuplicates(dupFarApart));
-
-        //should return false
-        int[] noDup = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
-        System.out.println(containsDuplicates(noDup));
-
-        //test lines for calculatingAverages
-        int[] allOneNumber = new int[]{1, 1, 1, 1};
-        System.out.println(calculatingAverages(allOneNumber));
-
-        int[] manyNumbers = new int[]{7, 8, 3, 5, 2, 4, 7, 5, 2, 4, 6, 8, 6, 2, 3};
-        System.out.println(calculatingAverages(manyNumbers));
-
+//        //test lines for roll
+//        //odd number
+//        System.out.println(Arrays.toString(roll(7)));
+//        //even number
+//        System.out.println(Arrays.toString(roll(14)));
+//        //zero
+//        System.out.println(Arrays.toString(roll(0)));
+//
+//        //test lines for containsDuplicates
+//
+//        //should return true
+//        int[] dupNextToEachOther = new int[]{1, 2, 5, 6, 6, 8};
+//        System.out.println(containsDuplicates(dupNextToEachOther));
+//
+//
+//        //should return true
+//        int[] dupFarApart = new int[]{9, 3, 6, 2, 4, 5, 3, 1,};
+//        System.out.println(containsDuplicates(dupFarApart));
+//
+//        //should return false
+//        int[] noDup = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
+//        System.out.println(containsDuplicates(noDup));
+//
+//        //test lines for calculatingAverages
+//        int[] allOneNumber = new int[]{1, 1, 1, 1};
+//        System.out.println(calculatingAverages(allOneNumber));
+//
+//        int[] manyNumbers = new int[]{7, 8, 3, 5, 2, 4, 7, 5, 2, 4, 6, 8, 6, 2, 3};
+//        System.out.println(calculatingAverages(manyNumbers));
+//
 //        int[] empty = new int[]{};
 //        System.out.println(calculatingAverages(empty));
-
-        int[] oneNumber = new int[]{4};
-        System.out.println(calculatingAverages(oneNumber));
+//
+//        int[] oneNumber = new int[]{4};
+//        System.out.println(calculatingAverages(oneNumber));
 
         List<String> votes = new ArrayList<>();
         votes.add("Bush");
@@ -162,8 +165,6 @@ public class Library {
     public static String tally(List<String> votes) {
 
         Object[] votesArray = votes.toArray();
-
-//        System.out.println(Arrays.toString(votesArray));
 
         String[] stringyVotesArray = new String[votesArray.length];
 

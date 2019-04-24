@@ -9,7 +9,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 public class LibraryTest {
     @Test
@@ -26,6 +26,7 @@ public class LibraryTest {
                 {55, 54, 60, 53, 59, 57, 61},
                 {65, 56, 55, 52, 55, 62, 57}
         };
+
 
         String results = Library.analyzingWeatherData(weeklyMonthTemperatures);
         assertEquals(new String[]{"Low: 51 High: 72"});
@@ -54,7 +55,7 @@ public class LibraryTest {
 
         assertTrue(1 == results.length());
 
-        //assertFalse(results = String.valueOf(7));
+//        assertFalse(results = String.valueOf(7));
 
 
     }
