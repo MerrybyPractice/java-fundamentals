@@ -199,13 +199,10 @@ public class Library {
 
                     currentCandidate = 0;
                 }
-
                 numVotes = 0;
-
             }
 
         }
-
         return winner.getKey();
     }
 }
