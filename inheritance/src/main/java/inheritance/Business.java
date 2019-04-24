@@ -12,7 +12,7 @@ public interface Business {
 
     String toString();
 
-    void addReview(Review reviewTitle, String body, String author, double stars);
+    void addReview(String body, String author, double stars);
 
     ArrayList viewReviews();
 

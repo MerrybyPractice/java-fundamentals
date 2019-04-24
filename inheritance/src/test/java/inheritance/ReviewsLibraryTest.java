@@ -5,6 +5,7 @@ package inheritance;
 
 import org.junit.Test;
 
+import javax.swing.border.TitledBorder;
 import java.util.ArrayList;
 
 import static org.junit.Assert.*;
@@ -44,13 +45,14 @@ public class ReviewsLibraryTest {
 
     @Test
     public void testAddReview() {
-        Review test = new Review();
+        Shop test = new Shop();
         test.name = "test";
-        test.addReview(test, "Info on the Restaurant", "A Name", 3.0);
+        test.addReview("Info on the Restaurant", "A Name", 3.0);
 
         ArrayList<String> expected = new ArrayList<>();
         expected.add("test Info on the Restaurant A Name [*, *, *]");
-        assertEquals(expected.toString(), test.reviews.toString());
+
+        assertEquals(expected.toString(), test.reviews.get(1).toString());
     }
 
 }

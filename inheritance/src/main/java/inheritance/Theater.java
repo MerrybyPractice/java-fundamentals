@@ -22,8 +22,8 @@ public class Theater implements Business {
 
     @Override
 
-    public void addReview(Review reviewTitle, String body, String author, double stars) {
-        reviewTitle.reviewConstructor(body, author, stars);
+    public void addReview(String body, String author, double stars) {
+        Review reviewTitle = new Review().reviewConstructor(body, author, stars);
 
         double existingStars = this.stars;
 
