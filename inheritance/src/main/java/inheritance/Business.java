@@ -12,12 +12,8 @@ public interface Business {
 
     String toString();
 
-    void addReview(String reviewTitle, String body, String author, double stars);
+    void addReview(Review reviewTitle, String body, String author, double stars);
 
     ArrayList viewReviews();
 
-
-    //all businesses have name, description, stars, dollar signs
-    //are able to be reviewed
-    //can be reviewed using review body, stars, author, review title, connect to business
 }

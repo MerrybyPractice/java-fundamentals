@@ -37,8 +37,8 @@ public class Shop implements Business {
     }
 
     @Override
-    public void addReview(String reviewTitle, String body, String author, double stars) {
-        Review.reviewConstructor(reviewTitle, body, author, stars);
+    public void addReview(Review reviewTitle, String body, String author, double stars) {
+        reviewTitle.reviewConstructor(body, author, stars);
 
         double existingStars = this.stars;
 

@@ -44,9 +44,9 @@ public class ReviewsLibraryTest {
 
     @Test
     public void testAddReview() {
-        Restaurant test = new Restaurant();
+        Review test = new Review();
         test.name = "test";
-        test.addReview("Info on the Restaurant", "A Name", 3);
+        test.addReview(test, "Info on the Restaurant", "A Name", 3.0);
 
         ArrayList<String> expected = new ArrayList<>();
         expected.add("test Info on the Restaurant A Name [*, *, *]");

@@ -7,16 +7,15 @@ public class Review {
     public String body;
     public String author;
     public double stars;
-    public Restaurant restaurant;
+    public String business;
 
-    public Review reviewConstructor(Review reviewTitle, String body, String author, double stars) {
-        reviewTitle = new Review();
-        reviewTitle.body = body;
-        reviewTitle.author = author;
-        reviewTitle.stars = stars;
-        reviewTitle.restaurant = this.restaurant;
+    public Review reviewConstructor(String body, String author, double stars) {
+        this.body = body;
+        this.author = author;
+        this.stars = stars;
+        this.business = Business.name;
 
-        return reviewTitle;
+        return this;
     }
 
     /**
@@ -30,7 +29,7 @@ public class Review {
             stringyStars.add("*");
         }
 
-        String stringyReviewInfo = restaurant.name + " " + body + " " + author + " " + stringyStars;
+        String stringyReviewInfo = Business.name + " " + body + " " + author + " " + stringyStars;
         return stringyReviewInfo;
     }
 }

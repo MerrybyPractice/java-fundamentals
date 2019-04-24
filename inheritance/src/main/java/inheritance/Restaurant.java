@@ -9,7 +9,7 @@ public class Restaurant implements Business {
     public String name;
     public double stars;
     public double price;
-    public ArrayList<Object> reviews = new ArrayList<>();
+    public ArrayList<Object> reviews;
 
     public Restaurant restaurantConstructor(String name, double stars, double price) {
         this.name = name;
@@ -41,8 +41,8 @@ public class Restaurant implements Business {
         return stringyRestaurantInfo;
     }
 
-    public void addReview(String reviewTitle, String body, String author, double stars) {
-        Review.reviewConstructor(reviewTitle, body, author, stars);
+    public void addReview(Review reviewTitle, String body, String author, double stars) {
+        reviewTitle.reviewConstructor(body, author, stars);
 
         double existingStars = this.stars;
 
@@ -52,6 +52,7 @@ public class Restaurant implements Business {
     }
 
     public ArrayList viewReviews() {
+
         return reviews;
     }
 
