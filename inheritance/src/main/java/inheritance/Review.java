@@ -3,11 +3,21 @@ package inheritance;
 import java.util.ArrayList;
 
 public class Review {
-    //body, author, number of stars
+
     public String body;
     public String author;
-    public int stars;
+    public double stars;
     public Restaurant restaurant;
+
+    public Review reviewConstructor(Review reviewTitle, String body, String author, double stars) {
+        reviewTitle = new Review();
+        reviewTitle.body = body;
+        reviewTitle.author = author;
+        reviewTitle.stars = stars;
+        reviewTitle.restaurant = this.restaurant;
+
+        return reviewTitle;
+    }
 
     /**
      * the .toString method adds *'s to an array list for each iteration through a for loop, counting up to

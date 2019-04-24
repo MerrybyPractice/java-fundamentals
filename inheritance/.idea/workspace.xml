@@ -6,6 +6,11 @@
       <change beforePath="$PROJECT_DIR$/../basiclibrary/out/production/classes/basiclibrary/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/out/production/classes/basiclibrary/Library.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../basiclibrary/src/main/java/basiclibrary/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/src/main/java/basiclibrary/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../basiclibrary/src/test/java/basiclibrary/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/src/test/java/basiclibrary/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/inheritance/Library.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/inheritance/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inheritance/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/inheritance/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inheritance/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/inheritance/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/inheritance/ReviewsLibraryTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -29,36 +34,42 @@
     <favorites_list name="inheritance" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5144033">
+    <splitter split-orientation="horizontal" split-proportion="0.5449438">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Review.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Shop.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="48">
-                  <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Restaurant.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+                <state relative-caret-position="303">
+                  <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
                   <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1338#1339#0" expanded="true" />
+                    <element signature="e#1269#1270#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Library.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Theater.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+                <state relative-caret-position="102">
+                  <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+                  <folding>
+                    <element signature="e#260#261#0" expanded="true" />
+                    <element signature="e#287#288#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Business.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -67,17 +78,31 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Restaurant.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="30" selection-start-line="30" selection-end-line="30" />
+                <state relative-caret-position="319">
+                  <caret line="43" column="80" selection-start-line="43" selection-start-column="80" selection-end-line="43" selection-end-column="80" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1497#1498#0" expanded="true" />
+                    <element signature="e#1527#1528#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/inheritance/LibraryTest.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Review.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="169">
+                  <caret line="18" selection-start-line="18" selection-end-line="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/inheritance/ReviewsLibraryTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="337">
                   <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
@@ -85,11 +110,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="447">
+                  <first_editor relative-caret-position="310">
                     <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
                   </first_editor>
                   <second_editor />
@@ -105,6 +130,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -115,10 +141,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/inheritance/Library.java" />
-        <option value="$PROJECT_DIR$/src/main/java/inheritance/Restaurant.java" />
         <option value="$PROJECT_DIR$/src/test/java/inheritance/LibraryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/inheritance/Review.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/inheritance/Review.java" />
+        <option value="$PROJECT_DIR$/src/main/java/inheritance/Restaurant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/inheritance/Business.java" />
+        <option value="$PROJECT_DIR$/src/main/java/inheritance/Theater.java" />
+        <option value="$PROJECT_DIR$/src/main/java/inheritance/Shop.java" />
       </list>
     </option>
   </component>
@@ -147,9 +176,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="747" />
+    <option name="width" value="1293" />
     <option name="height" value="831" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -168,6 +197,53 @@
             <path>
               <item name="inheritance" type="b2602c69:ProjectViewProjectNode" />
               <item name="inheritance" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="inheritance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inheritance" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inheritance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inheritance" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="inheritance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inheritance" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inheritance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inheritance" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="inheritance" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inheritance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inheritance" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="inheritance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inheritance" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inheritance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inheritance" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="inheritance" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -195,8 +271,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testAddReview">
-    <configuration name="LibraryTest.testAddReview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ReviewsLibraryTest.testAddReview">
+    <configuration name="ReviewsLibraryTest.testAddReview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="inheritance.test" />
       <extension name="coverage">
         <pattern>
@@ -205,14 +281,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="inheritance" />
-      <option name="MAIN_CLASS_NAME" value="inheritance.LibraryTest" />
+      <option name="MAIN_CLASS_NAME" value="inheritance.ReviewsLibraryTest" />
       <option name="METHOD_NAME" value="testAddReview" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.testRestaurantToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReviewsLibraryTest.testRestaurantToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="inheritance.test" />
       <extension name="coverage">
         <pattern>
@@ -221,14 +297,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="inheritance" />
-      <option name="MAIN_CLASS_NAME" value="inheritance.LibraryTest" />
+      <option name="MAIN_CLASS_NAME" value="inheritance.ReviewsLibraryTest" />
       <option name="METHOD_NAME" value="testRestaurantToString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.testReviewToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReviewsLibraryTest.testReviewToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="inheritance.test" />
       <extension name="coverage">
         <pattern>
@@ -237,7 +313,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="inheritance" />
-      <option name="MAIN_CLASS_NAME" value="inheritance.LibraryTest" />
+      <option name="MAIN_CLASS_NAME" value="inheritance.ReviewsLibraryTest" />
       <option name="METHOD_NAME" value="testReviewToString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -246,9 +322,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LibraryTest.testAddReview" />
-        <item itemvalue="JUnit.LibraryTest.testReviewToString" />
-        <item itemvalue="JUnit.LibraryTest.testRestaurantToString" />
+        <item itemvalue="JUnit.ReviewsLibraryTest.testAddReview" />
+        <item itemvalue="JUnit.ReviewsLibraryTest.testReviewToString" />
+        <item itemvalue="JUnit.ReviewsLibraryTest.testRestaurantToString" />
       </list>
     </recent_temporary>
   </component>
@@ -298,16 +374,16 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1293" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" sideWeight="0.5036765" side_tool="true" visible="true" weight="0.12463977" />
+      <window_info id="Favorites" sideWeight="0.5036765" side_tool="true" weight="0.12463977" />
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Learn" sideWeight="0.49632353" weight="0.3299712" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.12463977" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.1394037" />
       <window_info id="Structure" order="1" sideWeight="0.5018382" side_tool="true" weight="0.12463977" />
       <window_info anchor="bottom" id="Version Control" weight="0.3292232" />
       <window_info anchor="bottom" id="Terminal" weight="0.3292232" />
@@ -316,7 +392,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3292232" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3292232" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37083334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -340,34 +416,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Restaurant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/inheritance/LibraryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/inheritance/ReviewsLibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Review.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="447">
+          <first_editor relative-caret-position="310">
             <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Review.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Restaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="43" column="80" selection-start-line="43" selection-start-column="80" selection-end-line="43" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1497#1498#0" expanded="true" />
+            <element signature="e#1527#1528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Business.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Theater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+          <folding>
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <element signature="e#1269#1270#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

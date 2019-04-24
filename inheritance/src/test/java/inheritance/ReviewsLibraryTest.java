@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
-public class LibraryTest {
+public class ReviewsLibraryTest {
 
     //this test creates a new restaurant using the class and test values, and then compares the expected stringified result
     //with the actual.
